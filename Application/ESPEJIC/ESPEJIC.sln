@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESPEJIC", "ESPEJIC\ESPEJIC.csproj", "{D5AE86D5-8A1E-4EDA-B065-485C6AB4D799}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{5090379D-ABD2-48D2-A1B9-E0D5AD9680DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5AE86D5-8A1E-4EDA-B065-485C6AB4D799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5AE86D5-8A1E-4EDA-B065-485C6AB4D799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5AE86D5-8A1E-4EDA-B065-485C6AB4D799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5AE86D5-8A1E-4EDA-B065-485C6AB4D799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5090379D-ABD2-48D2-A1B9-E0D5AD9680DB}.Debug|Any CPU.ActiveCfg = Debug
+		{5090379D-ABD2-48D2-A1B9-E0D5AD9680DB}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {974E2867-A407-4BCF-9BF5-C35788687AB9}
+	EndGlobalSection
+EndGlobal

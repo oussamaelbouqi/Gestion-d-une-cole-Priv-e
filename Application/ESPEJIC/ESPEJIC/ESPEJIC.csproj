@@ -1,0 +1,1332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5AE86D5-8A1E-4EDA-B065-485C6AB4D799}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ESPEJIC</RootNamespace>
+    <AssemblyName>ESPEJIC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ESPEJIC.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>file.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABSENCE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABSENCE.designer.cs">
+      <DependentUpon>ABSENCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Document.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Document.Designer.cs">
+      <DependentUpon>Add_Document.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Archives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Archives.designer.cs">
+      <DependentUpon>Archives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Attestation_recu.cs">
+      <DependentUpon>Attestation_recu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Attestation_recu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Attestation_recu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Statistique.cs">
+      <DependentUpon>Statistique.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Statistique.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Statistique.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ESPEGICDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ESPEGICDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ficher a imprimer\Attestation_de_reussite.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Attestation_de_reussite.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Ficher a imprimer\ATTESTATION_omologé.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ATTESTATION_omologé.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Ficher a imprimer\Bulttletin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bulttletin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Ficher a imprimer\Demande_de_stagea.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Demande_de_stagea.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Note_Archive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Note_Archive.designer.cs">
+      <DependentUpon>Note_Archive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="autre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autre.Designer.cs">
+      <DependentUpon>autre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Liste_de_pres.cs">
+      <DependentUpon>Liste_de_pres.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\test.cs">
+      <DependentUpon>test.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\test.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>test.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ficher a imprimer\Attestation_de_scolarite.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Attestation_de_scolarite.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Ficher a imprimer\Liste_de_Presence.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Liste_de_Presence.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Ficher a imprimer\Statistique.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Statistique.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Fichiers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fichiers.Designer.cs">
+      <DependentUpon>Fichiers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filiére.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filiére.Designer.cs">
+      <DependentUpon>Filiére.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information_école.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information_école.Designer.cs">
+      <DependentUpon>Information_école.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\Liste_de_pres.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Liste_de_pres.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="list_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_report.Designer.cs">
+      <DependentUpon>list_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modul.Designer.cs">
+      <DependentUpon>Modul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ficher a imprimer\Convention_de_stg.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Convention_de_stg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Quiff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiff.Designer.cs">
+      <DependentUpon>Quiff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Note.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Note.designer.cs">
+      <DependentUpon>Note.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportview.Designer.cs">
+      <DependentUpon>reportview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report_for_statistique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_for_statistique.Designer.cs">
+      <DependentUpon>report_for_statistique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistique.Designer.cs">
+      <DependentUpon>Statistique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Testor3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testor3.designer.cs">
+      <DependentUpon>Testor3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\Bulletin_Arch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\Bulletin_Arch.Designer.cs">
+      <DependentUpon>Bulletin_Arch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\Ficher_Archiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\Ficher_Archiv.Designer.cs">
+      <DependentUpon>Ficher_Archiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\Laliste_Paiement_Arch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\Laliste_Paiement_Arch.Designer.cs">
+      <DependentUpon>Laliste_Paiement_Arch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\ListeNote_Arch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\ListeNote_Arch.Designer.cs">
+      <DependentUpon>ListeNote_Arch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\ListeStagaire_Archive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\ListeStagaire_Archive.designer.cs">
+      <DependentUpon>ListeStagaire_Archive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\Modilate de Passage_Arch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\Modilate de Passage_Arch.Designer.cs">
+      <DependentUpon>Modilate de Passage_Arch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\Note_Archives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\Note_Archives.designer.cs">
+      <DependentUpon>Note_Archives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\Paiment_Arch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\Paiment_Arch.Designer.cs">
+      <DependentUpon>Paiment_Arch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\UserControl Ficher_Arch\Attestation_omog_arch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\UserControl Ficher_Arch\Attestation_omog_arch.Designer.cs">
+      <DependentUpon>Attestation_omog_arch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\UserControl Ficher_Arch\Attestation_rusc_arch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\UserControl Ficher_Arch\Attestation_rusc_arch.Designer.cs">
+      <DependentUpon>Attestation_rusc_arch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\UserControl Ficher_Arch\Attestation_scol_arch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\UserControl Ficher_Arch\Attestation_scol_arch.Designer.cs">
+      <DependentUpon>Attestation_scol_arch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\UserControl Ficher_Arch\Bulettin_arch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\UserControl Ficher_Arch\Bulettin_arch.Designer.cs">
+      <DependentUpon>Bulettin_arch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Archive\UserControl Ficher_Arch\Stagaire_arch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Archive\UserControl Ficher_Arch\Stagaire_arch.Designer.cs">
+      <DependentUpon>Stagaire_arch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Document\Ajouter_Document.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Document\Ajouter_Document.Designer.cs">
+      <DependentUpon>Ajouter_Document.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Document\Modifier_Document.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Document\Modifier_Document.Designer.cs">
+      <DependentUpon>Modifier_Document.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Document\Printt_Docoment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Document\Printt_Docoment.Designer.cs">
+      <DependentUpon>Printt_Docoment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Ecole\Modifier_Inf_El.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Ecole\Modifier_Inf_El.Designer.cs">
+      <DependentUpon>Modifier_Inf_El.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Fichers\Attestation_omog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Fichers\Attestation_omog.Designer.cs">
+      <DependentUpon>Attestation_omog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Fichers\Attes_passage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Fichers\Attes_passage.Designer.cs">
+      <DependentUpon>Attes_passage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Fichers\Atte_Scol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Fichers\Atte_Scol.Designer.cs">
+      <DependentUpon>Atte_Scol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Fichers\Bulletins.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Fichers\Bulletins.Designer.cs">
+      <DependentUpon>Bulletins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Fichers\Convention_de_stage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Fichers\Convention_de_stage.Designer.cs">
+      <DependentUpon>Convention_de_stage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Fichers\Demande_de_stage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Fichers\Demande_de_stage.Designer.cs">
+      <DependentUpon>Demande_de_stage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Fichers\ListeAbs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Fichers\ListeAbs.Designer.cs">
+      <DependentUpon>ListeAbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Fichers\Reçu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Fichers\Reçu.Designer.cs">
+      <DependentUpon>Reçu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Fichers\Stagaires.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Fichers\Stagaires.Designer.cs">
+      <DependentUpon>Stagaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Fichers\Stage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Fichers\Stage.Designer.cs">
+      <DependentUpon>Stage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Fichers\Stati.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Fichers\Stati.Designer.cs">
+      <DependentUpon>Stati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Module\Ajouter_M.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Module\Ajouter_M.Designer.cs">
+      <DependentUpon>Ajouter_M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Module\la_liste_M.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Module\la_liste_M.Designer.cs">
+      <DependentUpon>la_liste_M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Module\Modifier_M.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Module\Modifier_M.Designer.cs">
+      <DependentUpon>Modifier_M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Note\Ajouter_N.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Note\Ajouter_N.Designer.cs">
+      <DependentUpon>Ajouter_N.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Note\Bulletin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Note\Bulletin.Designer.cs">
+      <DependentUpon>Bulletin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Note\Bulltien_Général.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Note\Bulltien_Général.Designer.cs">
+      <DependentUpon>Bulltien_Général.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Note\Liste_N.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Note\Liste_N.Designer.cs">
+      <DependentUpon>Liste_N.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Note\Modalite de passage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Note\Modalite de passage.Designer.cs">
+      <DependentUpon>Modalite de passage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Note\Modifier_N.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Note\Modifier_N.designer.cs">
+      <DependentUpon>Modifier_N.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Paiment\Histoire_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl Paiment\Histoire_Payment.Designer.cs">
+      <DependentUpon>Histoire_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\add_stage 1er anne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\add_stage 1er anne.designer.cs">
+      <DependentUpon>add_stage 1er anne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion_des_stages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion_des_stages.designer.cs">
+      <DependentUpon>Gestion_des_stages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifer_Stg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifer_Stg.Designer.cs">
+      <DependentUpon>Modifer_Stg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifier_For.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifier_For.designer.cs">
+      <DependentUpon>Modifier_For.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Absence\UserControlAbs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Absence\UserControlAbs.designer.cs">
+      <DependentUpon>UserControlAbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Absence\usercontrolforAbf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Absence\usercontrolforAbf.designer.cs">
+      <DependentUpon>usercontrolforAbf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Absence\UserControlLif.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Absence\UserControlLif.designer.cs">
+      <DependentUpon>UserControlLif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Absence\UserControlLis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Absence\UserControlLis.designer.cs">
+      <DependentUpon>UserControlLis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Absence\UserControlMof.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Absence\UserControlMof.designer.cs">
+      <DependentUpon>UserControlMof.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Absence\UserControlMos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Absence\UserControlMos.designer.cs">
+      <DependentUpon>UserControlMos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\add_stage 2eme anne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\add_stage 2eme anne.designer.cs">
+      <DependentUpon>add_stage 2eme anne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\la_liste_1ere.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\la_liste_1ere.designer.cs">
+      <DependentUpon>la_liste_1ere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\la_liste_2eme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\la_liste_2eme.designer.cs">
+      <DependentUpon>la_liste_2eme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\modifier_stage_1ere.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\modifier_stage_1ere.designer.cs">
+      <DependentUpon>modifier_stage_1ere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\modifier_stage_2eme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Gestion_DS\modifier_stage_2eme.designer.cs">
+      <DependentUpon>modifier_stage_2eme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Paiment\Liste_For_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl Paiment\Liste_For_S.Designer.cs">
+      <DependentUpon>Liste_For_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Paiment\Paiment liste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl Paiment\Paiment liste.designer.cs">
+      <DependentUpon>Paiment liste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Paiment\Paiment-Stagaire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Paiment\Paiment-Stagaire.designer.cs">
+      <DependentUpon>Paiment-Stagaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Formatteur\Ajouter_F.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Formatteur\Ajouter_F.designer.cs">
+      <DependentUpon>Ajouter_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config_admin.Designer.cs">
+      <DependentUpon>Config_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formatteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formatteur.designer.cs">
+      <DependentUpon>Formatteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Formatteur\Liste_F.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Formatteur\Liste_F.designer.cs">
+      <DependentUpon>Liste_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resert_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resert_password.designer.cs">
+      <DependentUpon>Resert_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stagaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stagaire.Designer.cs">
+      <DependentUpon>Stagaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Admin\Reset_Admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Admin\Reset_Admin.Designer.cs">
+      <DependentUpon>Reset_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Formatteur\Modifier_F.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Formatteur\Modifier_F.designer.cs">
+      <DependentUpon>Modifier_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Paiment\Salaire_For.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Paiment\Salaire_For.Designer.cs">
+      <DependentUpon>Salaire_For.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Quiff\Modifier_Qui.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Quiff\Modifier_Qui.Designer.cs">
+      <DependentUpon>Modifier_Qui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl Statistiques\liste_statis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl Statistiques\liste_statis.Designer.cs">
+      <DependentUpon>liste_statis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController Stagaire\Ajouter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController Stagaire\Ajouter.Designer.cs">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController Stagaire\La_liste.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController Stagaire\La_liste.Designer.cs">
+      <DependentUpon>La_liste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController Stagaire\Modifer_S.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController Stagaire\Modifer_S.Designer.cs">
+      <DependentUpon>Modifer_S.cs</DependentUpon>
+    </Compile>
+    <None Include="ESPEGICDataSet.xsc">
+      <DependentUpon>ESPEGICDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ESPEGICDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ESPEGICDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ESPEGICDataSet.xss">
+      <DependentUpon>ESPEGICDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Restart.png" />
+    <EmbeddedResource Include="ABSENCE.resx">
+      <DependentUpon>ABSENCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Document.resx">
+      <DependentUpon>Add_Document.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Archives.resx">
+      <DependentUpon>Archives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="autre.resx">
+      <DependentUpon>autre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ficher a imprimer\Attestation_de_reussite.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Attestation_de_reussite.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ficher a imprimer\Attestation_de_scolarite.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Attestation_de_scolarite.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ficher a imprimer\ATTESTATION_omologé.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ATTESTATION_omologé.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="Ficher a imprimer\Bulttletin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bulttletin.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Ficher a imprimer\Demande_de_stagea.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Demande_de_stagea.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ficher a imprimer\Liste_de_Presence.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Liste_de_Presence.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ficher a imprimer\Statistique.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Statistique.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fichiers.resx">
+      <DependentUpon>Fichiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filiére.resx">
+      <DependentUpon>Filiére.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information_école.resx">
+      <DependentUpon>Information_école.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_report.resx">
+      <DependentUpon>list_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modul.resx">
+      <DependentUpon>Modul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ficher a imprimer\Convention_de_stg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Convention_de_stg.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Note_Archive.resx">
+      <DependentUpon>Note_Archive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiff.resx">
+      <DependentUpon>Quiff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Recu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Note.resx">
+      <DependentUpon>Note.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportview.resx">
+      <DependentUpon>reportview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_for_statistique.resx">
+      <DependentUpon>report_for_statistique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistique.resx">
+      <DependentUpon>Statistique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testor3.resx">
+      <DependentUpon>Testor3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\Bulletin_Arch.resx">
+      <DependentUpon>Bulletin_Arch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\Ficher_Archiv.resx">
+      <DependentUpon>Ficher_Archiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\Laliste_Paiement_Arch.resx">
+      <DependentUpon>Laliste_Paiement_Arch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\ListeNote_Arch.resx">
+      <DependentUpon>ListeNote_Arch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\ListeStagaire_Archive.resx">
+      <DependentUpon>ListeStagaire_Archive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\Modilate de Passage_Arch.resx">
+      <DependentUpon>Modilate de Passage_Arch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\Note_Archives.resx">
+      <DependentUpon>Note_Archives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\Paiment_Arch.resx">
+      <DependentUpon>Paiment_Arch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\UserControl Ficher_Arch\Attestation_omog_arch.resx">
+      <DependentUpon>Attestation_omog_arch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\UserControl Ficher_Arch\Attestation_rusc_arch.resx">
+      <DependentUpon>Attestation_rusc_arch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\UserControl Ficher_Arch\Attestation_scol_arch.resx">
+      <DependentUpon>Attestation_scol_arch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\UserControl Ficher_Arch\Bulettin_arch.resx">
+      <DependentUpon>Bulettin_arch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Archive\UserControl Ficher_Arch\Stagaire_arch.resx">
+      <DependentUpon>Stagaire_arch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Document\Ajouter_Document.resx">
+      <DependentUpon>Ajouter_Document.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Document\Modifier_Document.resx">
+      <DependentUpon>Modifier_Document.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Document\Printt_Docoment.resx">
+      <DependentUpon>Printt_Docoment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Ecole\Modifier_Inf_El.resx">
+      <DependentUpon>Modifier_Inf_El.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Fichers\Attestation_omog.resx">
+      <DependentUpon>Attestation_omog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Fichers\Attes_passage.resx">
+      <DependentUpon>Attes_passage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Fichers\Atte_Scol.resx">
+      <DependentUpon>Atte_Scol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Fichers\Bulletins.resx">
+      <DependentUpon>Bulletins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Fichers\Convention_de_stage.resx">
+      <DependentUpon>Convention_de_stage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Fichers\Demande_de_stage.resx">
+      <DependentUpon>Demande_de_stage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Fichers\ListeAbs.resx">
+      <DependentUpon>ListeAbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Fichers\Reçu.resx">
+      <DependentUpon>Reçu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Fichers\Stagaires.resx">
+      <DependentUpon>Stagaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Fichers\Stage.resx">
+      <DependentUpon>Stage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Fichers\Stati.resx">
+      <DependentUpon>Stati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Gestion_DS\add_stage 1er anne.resx">
+      <DependentUpon>add_stage 1er anne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion_des_stages.resx">
+      <DependentUpon>Gestion_des_stages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifer_Stg.resx">
+      <DependentUpon>Modifer_Stg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifier_For.resx">
+      <DependentUpon>Modifier_For.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Absence\UserControlAbs.resx">
+      <DependentUpon>UserControlAbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Absence\usercontrolforAbf.resx">
+      <DependentUpon>usercontrolforAbf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Absence\UserControlLif.resx">
+      <DependentUpon>UserControlLif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Absence\UserControlLis.resx">
+      <DependentUpon>UserControlLis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Absence\UserControlMof.resx">
+      <DependentUpon>UserControlMof.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Absence\UserControlMos.resx">
+      <DependentUpon>UserControlMos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Gestion_DS\add_stage 2eme anne.resx">
+      <DependentUpon>add_stage 2eme anne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Gestion_DS\la_liste_1ere.resx">
+      <DependentUpon>la_liste_1ere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Gestion_DS\la_liste_2eme.resx">
+      <DependentUpon>la_liste_2eme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Gestion_DS\modifier_stage_1ere.resx">
+      <DependentUpon>modifier_stage_1ere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Gestion_DS\modifier_stage_2eme.resx">
+      <DependentUpon>modifier_stage_2eme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Module\Ajouter_M.resx">
+      <DependentUpon>Ajouter_M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Module\la_liste_M.resx">
+      <DependentUpon>la_liste_M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Module\Modifier_M.resx">
+      <DependentUpon>Modifier_M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Note\Ajouter_N.resx">
+      <DependentUpon>Ajouter_N.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Note\Bulletin.resx">
+      <DependentUpon>Bulletin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Note\Bulltien_Général.resx">
+      <DependentUpon>Bulltien_Général.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Note\Liste_N.resx">
+      <DependentUpon>Liste_N.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Note\Modalite de passage.resx">
+      <DependentUpon>Modalite de passage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Note\Modifier_N.resx">
+      <DependentUpon>Modifier_N.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Paiment\Histoire_Payment.resx">
+      <DependentUpon>Histoire_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Paiment\Liste_For_S.resx">
+      <DependentUpon>Liste_For_S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Paiment\Paiment liste.resx">
+      <DependentUpon>Paiment liste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Paiment\Paiment-Stagaire.resx">
+      <DependentUpon>Paiment-Stagaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Formatteur\Ajouter_F.resx">
+      <DependentUpon>Ajouter_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config_admin.resx">
+      <DependentUpon>Config_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formatteur.resx">
+      <DependentUpon>Formatteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Formatteur\Liste_F.resx">
+      <DependentUpon>Liste_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resert_password.resx">
+      <DependentUpon>Resert_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stagaire.resx">
+      <DependentUpon>Stagaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Admin\Reset_Admin.resx">
+      <DependentUpon>Reset_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Formatteur\Modifier_F.resx">
+      <DependentUpon>Modifier_F.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Paiment\Salaire_For.resx">
+      <DependentUpon>Salaire_For.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Quiff\Modifier_Qui.resx">
+      <DependentUpon>Modifier_Qui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl Statistiques\liste_statis.resx">
+      <DependentUpon>liste_statis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController Stagaire\Ajouter.resx">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController Stagaire\La_liste.resx">
+      <DependentUpon>La_liste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController Stagaire\Modifer_S.resx">
+      <DependentUpon>Modifer_S.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet\Attestation_recu.xsc">
+      <DependentUpon>Attestation_recu.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Attestation_recu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Attestation_recu.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\Attestation_recu.xss">
+      <DependentUpon>Attestation_recu.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Liste_de_pres.xsc">
+      <DependentUpon>Liste_de_pres.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Liste_de_pres.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Liste_de_pres.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\Liste_de_pres.xss">
+      <DependentUpon>Liste_de_pres.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Statistique.xsc">
+      <DependentUpon>Statistique.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\Statistique.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Statistique.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\Statistique.xss">
+      <DependentUpon>Statistique.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\test.xsc">
+      <DependentUpon>test.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\test.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>test.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\test.xss">
+      <DependentUpon>test.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo3%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\absentism.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\absentism1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\760463.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete User Male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clipboard List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password Reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update User1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\auser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Online Payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\online-education.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\pie-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete User Male1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete User Male2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete User Male3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Delete User Male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Save Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Student Male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Training.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Edit Property.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Available Updates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Scanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\grades%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\menu%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Tips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Go Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Return2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\menu-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\menu%281%29d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\main-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\numbers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exchange-rate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Delete Trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfiles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\letter-f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="file.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

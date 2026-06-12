@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Statistique" targetNamespace="http://tempuri.org/Statistique.xsd" xmlns:mstns="http://tempuri.org/Statistique.xsd" xmlns="http://tempuri.org/Statistique.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Statistique" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="Statistique" msprop:Generator_DataSetName="Statistique">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Statistique" msprop:Generator_RowEvHandlerName="StatistiqueRowChangeEventHandler" msprop:Generator_RowDeletedName="StatistiqueRowDeleted" msprop:Generator_RowDeletingName="StatistiqueRowDeleting" msprop:Generator_RowEvArgName="StatistiqueRowChangeEvent" msprop:Generator_TablePropName="_Statistique" msprop:Generator_RowChangedName="StatistiqueRowChanged" msprop:Generator_RowChangingName="StatistiqueRowChanging" msprop:Generator_TableClassName="StatistiqueDataTable" msprop:Generator_RowClassName="StatistiqueRow" msprop:Generator_TableVarName="tableStatistique" msprop:Generator_UserTableName="Statistique">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nom_fill" msprop:Generator_ColumnPropNameInRow="Nom_fill" msprop:Generator_ColumnPropNameInTable="Nom_fillColumn" msprop:Generator_ColumnVarNameInTable="columnNom_fill" msprop:Generator_UserColumnName="Nom_fill" type="xs:string" minOccurs="0" />
+              <xs:element name="Cap" msprop:Generator_ColumnPropNameInRow="Cap" msprop:Generator_ColumnPropNameInTable="CapColumn" msprop:Generator_ColumnVarNameInTable="columnCap" msprop:Generator_UserColumnName="Cap" type="xs:string" minOccurs="0" />
+              <xs:element name="Niveau" msprop:Generator_ColumnPropNameInRow="Niveau" msprop:Generator_ColumnPropNameInTable="NiveauColumn" msprop:Generator_ColumnVarNameInTable="columnNiveau" msprop:Generator_UserColumnName="Niveau" type="xs:string" minOccurs="0" />
+              <xs:element name="Nomber_1er" msprop:Generator_ColumnPropNameInRow="Nomber_1er" msprop:Generator_ColumnPropNameInTable="Nomber_1erColumn" msprop:Generator_ColumnVarNameInTable="columnNomber_1er" msprop:Generator_UserColumnName="Nomber_1er" type="xs:string" minOccurs="0" />
+              <xs:element name="Nomber_fill_1er" msprop:Generator_ColumnPropNameInRow="Nomber_fill_1er" msprop:Generator_ColumnPropNameInTable="Nomber_fill_1erColumn" msprop:Generator_ColumnVarNameInTable="columnNomber_fill_1er" msprop:Generator_UserColumnName="Nomber_fill_1er" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_2éme" msprop:Generator_ColumnPropNameInRow="Nombre_2éme" msprop:Generator_ColumnPropNameInTable="Nombre_2émeColumn" msprop:Generator_ColumnVarNameInTable="columnNombre_2éme" msprop:Generator_UserColumnName="Nombre_2éme" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_fill_2éme" msprop:Generator_ColumnPropNameInRow="Nombre_fill_2éme" msprop:Generator_ColumnPropNameInTable="Nombre_fill_2émeColumn" msprop:Generator_ColumnVarNameInTable="columnNombre_fill_2éme" msprop:Generator_UserColumnName="Nombre_fill_2éme" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_UserColumnName="Total" type="xs:string" minOccurs="0" />
+              <xs:element name="Forma_par" msprop:Generator_ColumnPropNameInRow="Forma_par" msprop:Generator_ColumnPropNameInTable="Forma_parColumn" msprop:Generator_ColumnVarNameInTable="columnForma_par" msprop:Generator_UserColumnName="Forma_par" type="xs:string" minOccurs="0" />
+              <xs:element name="Forma_vaca" msprop:Generator_ColumnPropNameInRow="Forma_vaca" msprop:Generator_ColumnPropNameInTable="Forma_vacaColumn" msprop:Generator_ColumnVarNameInTable="columnForma_vaca" msprop:Generator_UserColumnName="Forma_vaca" type="xs:string" minOccurs="0" />
+              <xs:element name="Entre_stage" msprop:Generator_ColumnPropNameInRow="Entre_stage" msprop:Generator_ColumnPropNameInTable="Entre_stageColumn" msprop:Generator_ColumnVarNameInTable="columnEntre_stage" msprop:Generator_UserColumnName="Entre_stage" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_stg_lau" msprop:Generator_ColumnPropNameInRow="Nombre_stg_lau" msprop:Generator_ColumnPropNameInTable="Nombre_stg_lauColumn" msprop:Generator_ColumnVarNameInTable="columnNombre_stg_lau" msprop:Generator_UserColumnName="Nombre_stg_lau" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_stg_abon" msprop:Generator_ColumnPropNameInRow="Nombre_stg_abon" msprop:Generator_ColumnPropNameInTable="Nombre_stg_abonColumn" msprop:Generator_ColumnVarNameInTable="columnNombre_stg_abon" msprop:Generator_UserColumnName="Nombre_stg_abon" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_stg_red" msprop:Generator_ColumnPropNameInRow="Nombre_stg_red" msprop:Generator_ColumnPropNameInTable="Nombre_stg_redColumn" msprop:Generator_ColumnVarNameInTable="columnNombre_stg_red" msprop:Generator_UserColumnName="Nombre_stg_red" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

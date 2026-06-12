@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Attestation_recu" targetNamespace="http://tempuri.org/Attestation_recu.xsd" xmlns:mstns="http://tempuri.org/Attestation_recu.xsd" xmlns="http://tempuri.org/Attestation_recu.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Attestation_recu" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Attestation_recu" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Attestation_recu">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Attestation_recu" msprop:Generator_RowClassName="Attestation_recuRow" msprop:Generator_RowEvHandlerName="Attestation_recuRowChangeEventHandler" msprop:Generator_RowDeletedName="Attestation_recuRowDeleted" msprop:Generator_RowDeletingName="Attestation_recuRowDeleting" msprop:Generator_RowEvArgName="Attestation_recuRowChangeEvent" msprop:Generator_TablePropName="_Attestation_recu" msprop:Generator_RowChangedName="Attestation_recuRowChanged" msprop:Generator_UserTableName="Attestation_recu" msprop:Generator_RowChangingName="Attestation_recuRowChanging" msprop:Generator_TableClassName="Attestation_recuDataTable" msprop:Generator_TableVarName="tableAttestation_recu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nom_stg" msprop:Generator_UserColumnName="Nom_stg" msprop:Generator_ColumnPropNameInTable="Nom_stgColumn" msprop:Generator_ColumnPropNameInRow="Nom_stg" msprop:Generator_ColumnVarNameInTable="columnNom_stg" type="xs:string" minOccurs="0" />
+              <xs:element name="Pren_stg" msprop:Generator_UserColumnName="Pren_stg" msprop:Generator_ColumnPropNameInTable="Pren_stgColumn" msprop:Generator_ColumnPropNameInRow="Pren_stg" msprop:Generator_ColumnVarNameInTable="columnPren_stg" type="xs:string" minOccurs="0" />
+              <xs:element name="CIN_stg" msprop:Generator_UserColumnName="CIN_stg" msprop:Generator_ColumnPropNameInTable="CIN_stgColumn" msprop:Generator_ColumnPropNameInRow="CIN_stg" msprop:Generator_ColumnVarNameInTable="columnCIN_stg" type="xs:string" minOccurs="0" />
+              <xs:element name="Promotion" msprop:Generator_UserColumnName="Promotion" msprop:Generator_ColumnPropNameInTable="PromotionColumn" msprop:Generator_ColumnPropNameInRow="Promotion" msprop:Generator_ColumnVarNameInTable="columnPromotion" type="xs:string" minOccurs="0" />
+              <xs:element name="Filedvide" msprop:Generator_ColumnPropNameInRow="Filedvide" msprop:Generator_ColumnPropNameInTable="FiledvideColumn" msprop:Generator_ColumnVarNameInTable="columnFiledvide" msprop:Generator_UserColumnName="Filedvide" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

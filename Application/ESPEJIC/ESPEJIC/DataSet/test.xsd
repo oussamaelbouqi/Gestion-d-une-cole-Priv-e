@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="test" targetNamespace="http://tempuri.org/test.xsd" xmlns:mstns="http://tempuri.org/test.xsd" xmlns="http://tempuri.org/test.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="test" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="test" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="test">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Stagaire_Nom" msprop:Generator_RowEvHandlerName="Stagaire_NomRowChangeEventHandler" msprop:Generator_RowDeletedName="Stagaire_NomRowDeleted" msprop:Generator_RowDeletingName="Stagaire_NomRowDeleting" msprop:Generator_RowEvArgName="Stagaire_NomRowChangeEvent" msprop:Generator_TablePropName="Stagaire_Nom" msprop:Generator_RowChangedName="Stagaire_NomRowChanged" msprop:Generator_UserTableName="Stagaire_Nom" msprop:Generator_RowChangingName="Stagaire_NomRowChanging" msprop:Generator_RowClassName="Stagaire_NomRow" msprop:Generator_TableClassName="Stagaire_NomDataTable" msprop:Generator_TableVarName="tableStagaire_Nom">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nom_stagaire" msprop:Generator_ColumnPropNameInTable="Nom_stagaireColumn" msprop:Generator_ColumnPropNameInRow="Nom_stagaire" msprop:Generator_UserColumnName="Nom_stagaire" msprop:Generator_ColumnVarNameInTable="columnNom_stagaire" type="xs:string" minOccurs="0" />
+              <xs:element name="Pre_stagaire" msprop:Generator_ColumnPropNameInTable="Pre_stagaireColumn" msprop:Generator_ColumnPropNameInRow="Pre_stagaire" msprop:Generator_UserColumnName="Pre_stagaire" msprop:Generator_ColumnVarNameInTable="columnPre_stagaire" type="xs:string" minOccurs="0" />
+              <xs:element name="CIN" msprop:Generator_ColumnPropNameInRow="CIN" msprop:Generator_ColumnPropNameInTable="CINColumn" msprop:Generator_ColumnVarNameInTable="columnCIN" msprop:Generator_UserColumnName="CIN" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

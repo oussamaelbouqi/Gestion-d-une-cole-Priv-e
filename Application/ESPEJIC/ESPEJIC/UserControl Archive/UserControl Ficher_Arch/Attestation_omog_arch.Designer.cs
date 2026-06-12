@@ -1,0 +1,469 @@
+﻿namespace ESPEJIC.UserControl_Archive.UserControl_Ficher_Arch
+{
+    partial class Attestation_omog_arch
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.N_Ins = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Cin_label = new System.Windows.Forms.Label();
+            this.Adr_txt = new System.Windows.Forms.TextBox();
+            this.Date_label = new System.Windows.Forms.Label();
+            this.pre_label = new System.Windows.Forms.Label();
+            this.Nom_txt = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.Email_txt = new System.Windows.Forms.TextBox();
+            this.Pre_txt = new System.Windows.Forms.TextBox();
+            this.Addr_label = new System.Windows.Forms.Label();
+            this.Niveau_label = new System.Windows.Forms.Label();
+            this.Nom_label = new System.Windows.Forms.Label();
+            this.Cin_txt = new System.Windows.Forms.TextBox();
+            this.Emai_label = new System.Windows.Forms.Label();
+            this.Tele_label = new System.Windows.Forms.Label();
+            this.Tele_txt = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(545, 87);
+            this.label4.Margin = new System.Windows.Forms.Padding(40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(190, 25);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Lieu de Naissance";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(739, 79);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(40);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(279, 37);
+            this.textBox1.TabIndex = 52;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(22, 491);
+            this.label3.Margin = new System.Windows.Forms.Padding(40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(194, 25);
+            this.label3.TabIndex = 49;
+            this.label3.Text = "Date de Naissance";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Location = new System.Drawing.Point(399, 571);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(228, 58);
+            this.panel2.TabIndex = 28;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Image = global::ESPEJIC.Properties.Resources.List;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(-19, -19);
+            this.button1.Margin = new System.Windows.Forms.Padding(40);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(50, 15, 15, 15);
+            this.button1.Size = new System.Drawing.Size(252, 96);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "      Imprimer";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(739, 163);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(279, 37);
+            this.comboBox5.TabIndex = 38;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(219, 404);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(300, 33);
+            this.dateTimePicker1.TabIndex = 37;
+            // 
+            // N_Ins
+            // 
+            this.N_Ins.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.N_Ins.Location = new System.Drawing.Point(219, 81);
+            this.N_Ins.Margin = new System.Windows.Forms.Padding(40);
+            this.N_Ins.Multiline = true;
+            this.N_Ins.Name = "N_Ins";
+            this.N_Ins.Size = new System.Drawing.Size(300, 37);
+            this.N_Ins.TabIndex = 29;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(22, 87);
+            this.label5.Margin = new System.Windows.Forms.Padding(40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(133, 25);
+            this.label5.TabIndex = 48;
+            this.label5.Text = "N°inscription";
+            // 
+            // Cin_label
+            // 
+            this.Cin_label.AutoSize = true;
+            this.Cin_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cin_label.Location = new System.Drawing.Point(22, 322);
+            this.Cin_label.Margin = new System.Windows.Forms.Padding(40);
+            this.Cin_label.Name = "Cin_label";
+            this.Cin_label.Size = new System.Drawing.Size(70, 25);
+            this.Cin_label.TabIndex = 35;
+            this.Cin_label.Text = "N°CIN";
+            // 
+            // Adr_txt
+            // 
+            this.Adr_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Adr_txt.Location = new System.Drawing.Point(739, 248);
+            this.Adr_txt.Margin = new System.Windows.Forms.Padding(40);
+            this.Adr_txt.Multiline = true;
+            this.Adr_txt.Name = "Adr_txt";
+            this.Adr_txt.Size = new System.Drawing.Size(279, 119);
+            this.Adr_txt.TabIndex = 42;
+            // 
+            // Date_label
+            // 
+            this.Date_label.AutoSize = true;
+            this.Date_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Date_label.Location = new System.Drawing.Point(22, 407);
+            this.Date_label.Margin = new System.Windows.Forms.Padding(40);
+            this.Date_label.Name = "Date_label";
+            this.Date_label.Size = new System.Drawing.Size(161, 25);
+            this.Date_label.TabIndex = 36;
+            this.Date_label.Text = "Date Inscription";
+            // 
+            // pre_label
+            // 
+            this.pre_label.AutoSize = true;
+            this.pre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pre_label.Location = new System.Drawing.Point(22, 248);
+            this.pre_label.Margin = new System.Windows.Forms.Padding(40);
+            this.pre_label.Name = "pre_label";
+            this.pre_label.Size = new System.Drawing.Size(86, 25);
+            this.pre_label.TabIndex = 32;
+            this.pre_label.Text = "Prénom";
+            // 
+            // Nom_txt
+            // 
+            this.Nom_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nom_txt.Location = new System.Drawing.Point(219, 163);
+            this.Nom_txt.Margin = new System.Windows.Forms.Padding(40);
+            this.Nom_txt.Multiline = true;
+            this.Nom_txt.Name = "Nom_txt";
+            this.Nom_txt.Size = new System.Drawing.Size(300, 37);
+            this.Nom_txt.TabIndex = 31;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.comboBox5);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.N_Ins);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.Cin_label);
+            this.panel1.Controls.Add(this.Adr_txt);
+            this.panel1.Controls.Add(this.Date_label);
+            this.panel1.Controls.Add(this.pre_label);
+            this.panel1.Controls.Add(this.Nom_txt);
+            this.panel1.Controls.Add(this.Email_txt);
+            this.panel1.Controls.Add(this.Pre_txt);
+            this.panel1.Controls.Add(this.Addr_label);
+            this.panel1.Controls.Add(this.Niveau_label);
+            this.panel1.Controls.Add(this.Nom_label);
+            this.panel1.Controls.Add(this.Cin_txt);
+            this.panel1.Controls.Add(this.Emai_label);
+            this.panel1.Controls.Add(this.Tele_label);
+            this.panel1.Controls.Add(this.Tele_txt);
+            this.panel1.Location = new System.Drawing.Point(3, 196);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1042, 652);
+            this.panel1.TabIndex = 24;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(219, 488);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(300, 33);
+            this.dateTimePicker2.TabIndex = 50;
+            // 
+            // Email_txt
+            // 
+            this.Email_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email_txt.Location = new System.Drawing.Point(739, 404);
+            this.Email_txt.Margin = new System.Windows.Forms.Padding(40);
+            this.Email_txt.Multiline = true;
+            this.Email_txt.Name = "Email_txt";
+            this.Email_txt.Size = new System.Drawing.Size(279, 37);
+            this.Email_txt.TabIndex = 44;
+            // 
+            // Pre_txt
+            // 
+            this.Pre_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pre_txt.Location = new System.Drawing.Point(219, 245);
+            this.Pre_txt.Margin = new System.Windows.Forms.Padding(40);
+            this.Pre_txt.Multiline = true;
+            this.Pre_txt.Name = "Pre_txt";
+            this.Pre_txt.Size = new System.Drawing.Size(300, 37);
+            this.Pre_txt.TabIndex = 33;
+            // 
+            // Addr_label
+            // 
+            this.Addr_label.AutoSize = true;
+            this.Addr_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Addr_label.Location = new System.Drawing.Point(545, 251);
+            this.Addr_label.Margin = new System.Windows.Forms.Padding(40);
+            this.Addr_label.Name = "Addr_label";
+            this.Addr_label.Size = new System.Drawing.Size(103, 25);
+            this.Addr_label.TabIndex = 39;
+            this.Addr_label.Text = "Addresse";
+            // 
+            // Niveau_label
+            // 
+            this.Niveau_label.AutoSize = true;
+            this.Niveau_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Niveau_label.Location = new System.Drawing.Point(545, 166);
+            this.Niveau_label.Margin = new System.Windows.Forms.Padding(40);
+            this.Niveau_label.Name = "Niveau_label";
+            this.Niveau_label.Size = new System.Drawing.Size(163, 25);
+            this.Niveau_label.TabIndex = 46;
+            this.Niveau_label.Text = "Niveau Scolaire";
+            // 
+            // Nom_label
+            // 
+            this.Nom_label.AutoSize = true;
+            this.Nom_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nom_label.Location = new System.Drawing.Point(22, 166);
+            this.Nom_label.Margin = new System.Windows.Forms.Padding(40);
+            this.Nom_label.Name = "Nom_label";
+            this.Nom_label.Size = new System.Drawing.Size(56, 25);
+            this.Nom_label.TabIndex = 30;
+            this.Nom_label.Text = "Nom";
+            // 
+            // Cin_txt
+            // 
+            this.Cin_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cin_txt.Location = new System.Drawing.Point(219, 319);
+            this.Cin_txt.Margin = new System.Windows.Forms.Padding(40);
+            this.Cin_txt.Multiline = true;
+            this.Cin_txt.Name = "Cin_txt";
+            this.Cin_txt.Size = new System.Drawing.Size(300, 37);
+            this.Cin_txt.TabIndex = 34;
+            // 
+            // Emai_label
+            // 
+            this.Emai_label.AutoSize = true;
+            this.Emai_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Emai_label.Location = new System.Drawing.Point(545, 410);
+            this.Emai_label.Margin = new System.Windows.Forms.Padding(40);
+            this.Emai_label.Name = "Emai_label";
+            this.Emai_label.Size = new System.Drawing.Size(65, 25);
+            this.Emai_label.TabIndex = 40;
+            this.Emai_label.Text = "Email";
+            // 
+            // Tele_label
+            // 
+            this.Tele_label.AutoSize = true;
+            this.Tele_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tele_label.Location = new System.Drawing.Point(545, 491);
+            this.Tele_label.Margin = new System.Windows.Forms.Padding(40);
+            this.Tele_label.Name = "Tele_label";
+            this.Tele_label.Size = new System.Drawing.Size(114, 25);
+            this.Tele_label.TabIndex = 43;
+            this.Tele_label.Text = "Téléphone";
+            // 
+            // Tele_txt
+            // 
+            this.Tele_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tele_txt.Location = new System.Drawing.Point(739, 488);
+            this.Tele_txt.Margin = new System.Windows.Forms.Padding(40);
+            this.Tele_txt.Multiline = true;
+            this.Tele_txt.Name = "Tele_txt";
+            this.Tele_txt.Size = new System.Drawing.Size(279, 37);
+            this.Tele_txt.TabIndex = 45;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(607, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 25);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Classe :";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.75F, System.Drawing.FontStyle.Bold);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(785, 130);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(228, 33);
+            this.comboBox2.TabIndex = 23;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(608, 133);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 25);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Nom du Stagiaire :";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.75F, System.Drawing.FontStyle.Bold);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(784, 82);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(228, 33);
+            this.comboBox1.TabIndex = 22;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.75F, System.Drawing.FontStyle.Bold);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(784, 32);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(228, 33);
+            this.comboBox3.TabIndex = 26;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 13.75F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(607, 35);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 25);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Année :";
+            // 
+            // Attestation_omog_arch
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
+            this.Name = "Attestation_omog_arch";
+            this.Size = new System.Drawing.Size(1048, 870);
+            this.Load += new System.EventHandler(this.Attestation_omog_arch_Load);
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox N_Ins;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label Cin_label;
+        private System.Windows.Forms.TextBox Adr_txt;
+        private System.Windows.Forms.Label Date_label;
+        private System.Windows.Forms.Label pre_label;
+        private System.Windows.Forms.TextBox Nom_txt;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox Email_txt;
+        private System.Windows.Forms.TextBox Pre_txt;
+        private System.Windows.Forms.Label Addr_label;
+        private System.Windows.Forms.Label Niveau_label;
+        private System.Windows.Forms.Label Nom_label;
+        private System.Windows.Forms.TextBox Cin_txt;
+        private System.Windows.Forms.Label Emai_label;
+        private System.Windows.Forms.Label Tele_label;
+        private System.Windows.Forms.TextBox Tele_txt;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label6;
+    }
+}
